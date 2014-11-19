@@ -121,7 +121,7 @@ results in a frequency domain output. The original units of measure (G, radians 
 Excepting those cases where the original code book specifies that an f* measurement is a frequency measurement (identified by the _meanFreq suffix)
 the f* measurements cannot be interpreted in the same units as the original t* measurements from which they are derived.  
 
-The use of the dataset is acknowdged to be courtesy of
+The use of the dataset is acknowledged to be courtesy of
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes_Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware_Friendly Support Vector Machine. International Workshop of Ambient Assisted Living IWAAL 2012. Vitoria_Gasteiz, Spain. Dec 2012
 
 
