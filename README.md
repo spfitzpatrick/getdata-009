@@ -13,7 +13,7 @@ directory as that in which the run_analysis.R script is located.
 
 - result.txt -> The resultant dataset generated as specified in step 5 of the assignment
 
-- tidy_dataset.txt -> The 'tidy' dataset as specified in steps 1-4 of the assignment
+- tidy_data.txt -> The 'tidy' dataset as specified in steps 1-4 of the assignment
 
 
 
