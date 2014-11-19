@@ -8,9 +8,8 @@ Each record of the output data set provided by this script consists of the follo
 
 - Numeric subject identifier
 - Textual description of the activity being carried out by the subject
-- Textual description of the aggregation method applied to the original source data (mean)
-79 measurements selected from the original source data. For each unique combination of subject and activity the mean of all samples across all 79
-variables is computed 
+- Textual description of the aggregation method applied to the original source data (mean) of the 79 measurements selected from the original source data. For each unique combination of subject and activity the mean of all samples across all 79
+variables is computed. 
 
 The 79 measurements are listed below: 
 
