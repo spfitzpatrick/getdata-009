@@ -18,6 +18,7 @@ The 79 measurements are listed below:
 
 - G is units of gravity
 - Hz is units of hertz (cycles/sec) 
+- See the explanation under Summary Choices regarding the dimensionless units
 
 <table>
 
