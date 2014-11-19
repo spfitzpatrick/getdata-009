@@ -1,106 +1,108 @@
 ### Code book:
 
-t* are time domain based signals
-f* are frequency domain provided by Fourier transform of the input t* signals
-
 The output data provided by this script is a further processing of the Human Activity Recognition dataset available from the UCI Machine Learning Repository.
 This input dataset records the bodily movements of 30 subjects using the in-built sensors of a smart phone. The activity being performed by each subject
 at the time of measurement is also noted and is categorized in 6 categories.
 
 Each record of the output data set provided by this script consists of the following
 
-Numeric subject identifier
-Textual description of the activity being carried out by the subject
-Textual description of the aggregation method applied to the original source data (mean)
+- Numeric subject identifier
+- Textual description of the activity being carried out by the subject
+- Textual description of the aggregation method applied to the original source data (mean)
 79 measurements selected from the original source data. For each unique combination of subject and activity the mean of all samples across all 79
 variables is computed 
 
-The 79 measurements are as follows: 
+The 79 measurements are listed below: 
+
+- t* are time domain based signals
+- f* are frequency domain provided by Fourier transform of the input t* signals
+
+- G is units of gravity
+- Hz is units of hertz (cycles/sec) 
 
 <table>
 
-<tr><td></td>	<td>Name</td>				<td>Units</td>		<td>Description</td>
-<tr><td>1</td>  <td>tBodyAcc_mean_X</td>		<td>G</td>		<td>Mean of body acceleration X axis</td>
-<tr><td>2</td>  <td>tBodyAcc_mean_Y</td>		<td>G</td>		<td>Mean of body acceleration Y axis</td>
-<tr><td>3</td>  <td>tBodyAcc_mean_Z</td>		<td>G</td>		<td>Mean of body acceleration Z axis</td>
-<tr><td>4</td>  <td>tBodyAcc_std_X</td>			<td>G</td>		<td>Std deviation of body acceleration X axis</td>
-<tr><td>5</td>  <td>tBodyAcc_std_Y</td>			<td>G</td>		<td>Std deviation of body acceleration Y axis</td>
+<tr><td></td>	<td>Name</td>			<td>Units</td>		<td>Description</td>
+<tr><td>1</td>  <td>tBodyAcc_mean_X</td>	<td>G</td>		<td>Mean of body acceleration X axis</td></tr>
+<tr><td>2</td>  <td>tBodyAcc_mean_Y</td>	<td>G</td>		<td>Mean of body acceleration Y axis</td></tr>
+<tr><td>3</td>  <td>tBodyAcc_mean_Z</td>	<td>G</td>		<td>Mean of body acceleration Z axis</td></tr>
+<tr><td>4</td>  <td>tBodyAcc_std_X</td>		<td>G</td>		<td>Std deviation of body acceleration X axis</td></tr>
+<tr><td>5</td>  <td>tBodyAcc_std_Y</td>		<td>G</td>		<td>Std deviation of body acceleration Y axis</td></tr>
+<tr><td>6</td>	<td>tBodyAcc_std_Z</td>		<td>G</td>		<td>Std deviation of body acceleration Z axis</td></tr>
+<tr><td>7</td>	<td>tGravityAcc_mean_X</td>	<td>G</td>		<td>Mean of gravity acceleration X axis</td></tr>
+<tr><td>8</td>	<td>tGravityAcc_mean_Y</td>	<td>G</td>		<td>Mean of gravity acceleration Y axis</td></tr>
+<tr><td>9</td>	<td>tGravityAcc_mean_Z</td>	<td>G</td>		<td>Mean of gravity acceleration Z axis</td></tr>
+<tr><td>10</td>	<td>tGravityAcc_std_X</td>	<td>G</td>		<td>Std deviation of gravity acceleration X axis</td></tr>
+<tr><td>11</td>	<td>tGravityAcc_std_Y</td>	<td>G</td>		<td>Std deviation of gravity acceleration Y axis</td></tr>
+<tr><td>12</td>	<td>tGravityAcc_std_Z</td>	<td>G</td>		<td>Std deviation of gravity acceleration Z axis</td></tr>
+<tr><td>13</td>	<td>tBodyAccJerk_mean_X</td>	<td>G/sec</td>		<td>Mean of rate of body acceleration X axis</td></tr>
+<tr><td>14</td>	<td>tBodyAccJerk_mean_Y</td>	<td>G/sec</td>		<td>Mean of rate of body acceleration Y axis</td></tr>
+<tr><td>15</td>	<td>tBodyAccJerk_mean_Z</td>	<td>G/sec</td>		<td>Mean of rate of body acceleration Z axis</td></tr>
+<tr><td>16</td>	<td>tBodyAccJerk_std_X</td>	<td>G/sec</td>		<td>Std deviation of rate of body acceleration X axis</td></tr>
+<tr><td>17</td>	<td>tBodyAccJerk_std_Y</td>	<td>G/sec</td>		<td>Std deviation of rate of body acceleration Y axis</td></tr>
+<tr><td>18</td>	<td>tBodyAccJerk_std_Z</td>	<td>G/sec</td>		<td>Std deviation of rate of body acceleration Z axis</td></tr>
+<tr><td>19</td>	<td>tBodyGyro_mean_X</td>	<td>Radians/sec</td>	<td>Mean of rate of body rotation X axis</td></tr>
+<tr><td>20</td>	<td>tBodyGyro_mean_Y</td>	<td>Radians/sec</td>	<td>Mean of rate of body rotation Y axis</td></tr>
+<tr><td>21</td>	<td>tBodyGyro_mean_Z</td>	<td>Radians/sec</td>	<td>Mean of rate of body rotation Z axis</td></tr>
+<tr><td>22</td>	<td>tBodyGyro_std_X</td>	<td>Radians/sec</td>	<td>Std deviation of rate of body rotation X axis</td></tr>
+<tr><td>23</td>	<td>tBodyGyro_std_Y</td>	<td>Radians/sec</td>	<td>Std deviation of rate of body rotation Y axis</td></tr>
+<tr><td>24</td>	<td>tBodyGyro_std_Z</td>	<td>Radians/sec</td>	<td>Std deviation of rate of body rotation Z axis</td></tr>
+<tr><td>25</td>	<td>tBodyGyroJerk_mean_X</td>	<td>Radians/sec/sec</td><td>Mean of 1st derivative of rate of body rotation X axis</td></tr>
+<tr><td>26</td>	<td>tBodyGyroJerk_mean_Y</td>	<td>Radians/sec/sec</td><td>Mean of 1st derivative of rate of body rotation Y axis</td></tr>
+<tr><td>27</td>	<td>tBodyGyroJerk_mean_Z</td>	<td>Radians/sec/sec</td><td>Mean of 1st derivative of rate of body rotation Z axis</td></tr>
+<tr><td>28</td>	<td>tBodyGyroJerk_std_X</td>	<td>Radians/sec/sec</td><td>Std deviation of 1st derivative of rate of body rotation X axis</td></tr>
+<tr><td>29</td>	<td>tBodyGyroJerk_std_Y</td>	<td>Radians/sec/sec</td><td>Std deviation of 1st derivative of rate of body rotation Y axis</td></tr>
+<tr><td>30</td>	<td>tBodyGyroJerk_std_Z</td>	<td>Radians/sec/sec</td><td>Std deviation of 1st derivative of rate of body rotation Z axis</td></tr>
+<tr><td>31</td>	<td>tBodyAccMag_mean</td>	<td>G</td>		<td>Mean of absolute magnitudes of body acceleration XYZ axes</td></tr>
+<tr><td>32</td>	<td>tBodyAccMag_std</td>	<td>G</td>		<td>Std deviation of absolute magnitudes of body acceleration XYZ axes</td></tr>
+<tr><td>33</td>	<td>tGravityAccMag_mean</td>	<td>G</td>		<td>Mean of absolute magnitudes of gravity acceleration XYZ axes</td></tr>
+<tr><td>34</td>	<td>tGravityAccMag_std</td>	<td>G</td>		<td>Std deviation of absolute magnitudes of gravity acceleration XYZ axes</td></tr>
+<tr><td>35</td>	<td>tBodyAccJerkMag_mean</td>	<td>G/sec</td>		<td>Mean of absolute magnitudes of rate of body acceleration XYZ axes</td></tr>
+<tr><td>36</td>	<td>tBodyAccJerkMag_std</td>	<td>G/sec</td>		<td>Std deviation of absolute magnitudes of rate of body acceleration XYZ axes</td></tr>
+<tr><td>37</td>	<td>tBodyGyroMag_mean</td>	<td>Radian/sec</td>	<td>Mean of absolute magnitudes rate of body rotation XZY axes</td></tr>
+<tr><td>38</td>	<td>tBodyGyroMag_std</td>	<td>Radian/sec</td>	<td>Std deviation of absolute magnitudes rate of body rotation XZY axes</td></tr>
+<tr><td>39</td>	<td>tBodyGyroJerkMag_mean</td>	<td>Radian/sec/sec</td>	<td>Mean of absolute magnitudes of 1st derivative of rate of body rotation XYZ axes</td></tr>
+<tr><td>40</td>	<td>tBodyGyroJerkMag_std</td>	<td>Radian/sec/sec</td>	<td>Std deviation of absolute magnitudes of 1st derivative of rate of body rotation XYZ axes</td></tr>
+<tr><td>41</td>	<td>fBodyAcc_mean_X</td>	<td>Dimensionless</td>	<td>Mean of FFT transformed body acceleration X axis</td></tr>
+<tr><td>42</td>	<td>fBodyAcc_mean_Y</td>	<td>Dimensionless</td>	<td>Mean of FFT transformed body acceleration Y axis</td></tr>
+<tr><td>43</td>	<td>fBodyAcc_mean_Z</td>	<td>Dimensionless</td>	<td>Mean of FFT transformed body acceleration Z axis</td></tr>
+<tr><td>44</td>	<td>fBodyAcc_std_X</td>		<td>Dimensionless</td>	<td>Std deviation of FFT transformed body acceleration X axis</td></tr>
+<tr><td>45</td>	<td>fBodyAcc_std_Y</td>		<td>Dimensionless</td>	<td>Std deviation of FFT transformed body acceleration Y axis</td></tr>
+<tr><td>46</td>	<td>fBodyAcc_std_Z</td>		<td>Dimensionless</td>	<td>Std deviation of FFT transformed body acceleration Z axis</td></tr>
+<tr><td>47</td>	<td>fBodyAcc_meanFreq_X</td>	<td>Hz</td>		<td>Mean of body acceleration frequency X axis</td></tr>
+<tr><td>48</td>	<td>fBodyAcc_meanFreq_Y</td>	<td>Hz</td>		<td>Mean of body acceleration frequency Y axis</td></tr>
+<tr><td>49</td>	<td>fBodyAcc_meanFreq_Z</td>	<td>Hz</td>		<td>Mean of body acceleration frequency Z axis</td></tr>
+<tr><td>50</td>	<td>fBodyAccJerk_mean_X</td>	<td>Dimensionless</td>	<td>Mean of FFT transformed rate of body acceleration X axis</td></tr>
+<tr><td>51</td>	<td>fBodyAccJerk_mean_Y</td>	<td>Dimensionless</td>	<td>Mean of FFT transformed rate of body acceleration Y axis</td></tr>
+<tr><td>52</td>	<td>fBodyAccJerk_mean_Z</td>	<td>Dimensionless</td>	<td>Mean of FFT transformed rate of body acceleration Z axis</td></tr>
+<tr><td>53</td>	<td>fBodyAccJerk_std_X</td>	<td>Dimensionless</td>	<td>Std deviation of FFT transformed rate of body acceleration X axis</td></tr>
+<tr><td>54</td>	<td>fBodyAccJerk_std_Y</td>	<td>Dimensionless</td>	<td>Std deviation of FFT transformed rate of body acceleration Y axis</td></tr>
+<tr><td>55</td>	<td>fBodyAccJerk_std_Z</td>	<td>Dimensionless</td>	<td>Std deviation of FFT transformed rate of body acceleration Z axis</td></tr>
+<tr><td>56</td>	<td>fBodyAccJerk_meanFreq_X</td><td>Hz</td>		<td>Mean of rate of body acceleration frequency X axis</td></tr>
+<tr><td>57</td>	<td>fBodyAccJerk_meanFreq_Y</td><td>Hz</td>		<td>Mean of rate of body acceleration frequency Y axis</td></tr>
+<tr><td>58</td>	<td>fBodyAccJerk_meanFreq_Z</td><td>Hz</td>		<td>Mean of rate of body acceleration frequency Z axis</td></tr>
+<tr><td>59</td>	<td>fBodyGyro_mean_X</td>	<td>Dimensionless</td>	<td>Mean of FFT transformed rate of body rotation X axis</td></tr>
+<tr><td>60</td>	<td>fBodyGyro_mean_Y</td>	<td>Dimensionless</td>	<td>Mean of FFT transformed rate of body rotation Y axis</td></tr>
+<tr><td>61</td>	<td>fBodyGyro_mean_Z</td>	<td>Dimensionless</td>	<td>Mean of FFT transformed rate of body rotation Z axis</td></tr>
+<tr><td>62</td>	<td>fBodyGyro_std_X</td>	<td>Dimensionless</td>	<td>Std deviation of FFT transformed rate of body rotation X axis</td></tr>
+<tr><td>63</td>	<td>fBodyGyro_std_Y</td>	<td>Dimensionless</td>	<td>Std deviation of FFT transformed rate of body rotation Y axis</td></tr>
+<tr><td>64</td>	<td>fBodyGyro_std_Z</td>	<td>Dimensionless</td>	<td>Std deviation of FFT transformed rate of body rotation Z axis</td></tr>
+<tr><td>65</td>	<td>fBodyGyro_meanFreq_X</td>	<td>Hz</td>		<td>Mean frequency of rate of body rotation X axis</td></tr>
+<tr><td>66</td>	<td>fBodyGyro_meanFreq_Y</td>	<td>Hz</td>		<td>Mean frequency of rate of body rotation Y axis</td></tr>
+<tr><td>67</td>	<td>fBodyGyro_meanFreq_Z</td>	<td>Hz</td>		<td>Mean frequency of rate of body rotation Z axis</td></tr>
+<tr><td>68</td>	<td>fBodyAccMag_mean</td>	<td>Dimensionless</td>	<td>Mean of FFT transformed absolute magnitudes of body acceleration XYZ axes</td></tr>
+<tr><td>69</td>	<td>fBodyAccMag_std</td>	<td>Dimensionless</td>	<td>Std deviation of FFT transformed absolute magnitudes of body acceleration XYZ axes</td></tr>
+<tr><td>70</td>	<td>fBodyAccMag_meanFreq</td>	<td>Hz</td>		<td>Mean frequency of absolute magnitudes of body acceleration XYZ axes</td></tr>
+<tr><td>71</td>	<td>fBodyBodyAccJerkMag_mean</td><td>Dimensionless</td>	<td>Mean of FFT transformed absolute magnitudes of rate of body acceleration XYZ axes</td></tr>
+<tr><td>72</td> <td>fBodyBodyAccJerkMag_std</td><td>Dimensionless</td>	<td>Std deviation of FFT transformed absolute magnitudes of rate of body acceleration XYZ axes</td></tr>
+<tr><td>73</td> <td>fBodyBodyAccJerkMag_meanFreq</td><td>Hz</td>	<td>Mean frequency of absolute magnitudes of rate of body acceleration XYZ axes</td></tr>
+<tr><td>74</td> <td>fBodyBodyGyroMag_mean</td>	<td>Dimensionless</td>	<td>Mean of FFT transformed absolute magnitudes rate of body rotation XZY axes</td></tr>
+<tr><td>75</td> <td>fBodyBodyGyroMag_std</td>	<td>Dimensionless</td>	<td>Std deviation of FFT transformed absolute magnitudes rate of body rotation XZY axes</td></tr>
+<tr><td>76</td> <td>fBodyBodyGyroMag_meanFreq</td><td>Hz</td>		<td>Mean frequency of absolute magnitudes rate of body rotation XZY axes</td></tr>
+<tr><td>77</td> <td>fBodyBodyGyroJerkMag_mean</td><td>Dimensionless</td><td>Mean of FFT transformed absolute magnitudes of 1st derivative of rate of body rotation XYZ axes</td></tr>	
+<tr><td>78</td> <td>fBodyBodyGyroJerkMag_std</td><td>Dimensionless</td>	<td>Std deviation of FFT transformed absolute magnitudes of 1st derivative of rate of bodyrotation XYZ axes</td></tr>
+<tr><td>79</td> <td>fBodyBodyGyroJerkMag_meanFreq</td><td>Hz</td>	<td>Mean frequency of absolute magnitudes of 1st derivative of rate of body rotation XYZ axes</td></tr>
 </table>
-6  tBodyAcc_std_Z			G		Std deviation of body acceleration Z axis
-7  tGravityAcc_mean_X			G		Mean of gravity acceleration X axis
-8  tGravityAcc_mean_Y			G		Mean of gravity acceleration Y axis
-9  tGravityAcc_mean_Z			G		Mean of gravity acceleration Z axis
-10 tGravityAcc_std_X			G		Std deviation of gravity acceleration X axis
-11 tGravityAcc_std_Y			G		Std deviation of gravity acceleration Y axis
-12 tGravityAcc_std_Z			G		Std deviation of gravity acceleration Z axis
-13 tBodyAccJerk_mean_X			G/sec		Mean of rate of body acceleration X axis
-14 tBodyAccJerk_mean_Y			G/sec		Mean of rate of body acceleration Y axis
-15 tBodyAccJerk_mean_Z			G/sec		Mean of rate of body acceleration Z axis
-16 tBodyAccJerk_std_X			G/sec		Std deviation of rate of body acceleration X axis
-17 tBodyAccJerk_std_Y			G/sec		Std deviation of rate of body acceleration Y axis
-18 tBodyAccJerk_std_Z			G/sec		Std deviation of rate of body acceleration Z axis
-19 tBodyGyro_mean_X			Radians/sec	Mean of rate of body rotation X axis
-20 tBodyGyro_mean_Y			Radians/sec	Mean of rate of body rotation Y axis
-21 tBodyGyro_mean_Z			Radians/sec	Mean of rate of body rotation Z axis
-22 tBodyGyro_std_X			Radians/sec	Std deviation of rate of body rotation X axis
-23 tBodyGyro_std_Y			Radians/sec	Std deviation of rate of body rotation Y axis
-24 tBodyGyro_std_Z			Radians/sec	Std deviation of rate of body rotation Z axis
-25 tBodyGyroJerk_mean_X			Radians/sec/sec	Mean of 1st derivative of rate of body rotation X axis
-26 tBodyGyroJerk_mean_Y			Radians/sec/sec	Mean of 1st derivative of rate of body rotation Y axis
-27 tBodyGyroJerk_mean_Z			Radians/sec/sec	Mean of 1st derivative of rate of body rotation Z axis
-28 tBodyGyroJerk_std_X			Radians/sec/sec	Std deviation of 1st derivative of rate of body rotation X axis
-29 tBodyGyroJerk_std_Y			Radians/sec/sec	Std deviation of 1st derivative of rate of body rotation Y axis
-30 tBodyGyroJerk_std_Z			Radians/sec/sec	Std deviation of 1st derivative of rate of body rotation Z axis
-31 tBodyAccMag_mean			G		Mean of absolute magnitudes of body acceleration XYZ axes
-32 tBodyAccMag_std			G		Std deviation of absolute magnitudes of body acceleration XYZ axes
-33 tGravityAccMag_mean			G		Mean of absolute magnitudes of gravity acceleration XYZ	axes
-34 tGravityAccMag_std			G		Std deviation of absolute magnitudes of gravity acceleration XYZ axes
-35 tBodyAccJerkMag_mean			G/sec		Mean of absolute magnitudes of rate of body acceleration XYZ axes
-36 tBodyAccJerkMag_std			G/sec		Std deviation of absolute magnitudes of rate of body acceleration XYZ axes
-37 tBodyGyroMag_mean			Radian/sec	Mean of absolute magnitudes rate of body rotation XZY axes
-38 tBodyGyroMag_std			Radian/sec	Std deviation of absolute magnitudes rate of body rotation XZY axes
-39 tBodyGyroJerkMag_mean		Radian/sec/sec	Mean of absolute magnitudes of 1st derivative of rate of body rotation XYZ axes
-40 tBodyGyroJerkMag_std			Radian/sec/sec	Std deviation of absolute magnitudes of 1st derivative of rate of body rotation XYZ axes
-41 fBodyAcc_mean_X			Dimensionless	Mean of FFT transformed body acceleration X axis
-42 fBodyAcc_mean_Y			Dimensionless	Mean of FFT transformed body acceleration Y axis
-43 fBodyAcc_mean_Z			Dimensionless	Mean of FFT transformed body acceleration Z axis
-44 fBodyAcc_std_X			Dimensionless	Std deviation of FFT transformed body acceleration X axis
-45 fBodyAcc_std_Y			Dimensionless	Std deviation of FFT transformed body acceleration Y axis
-46 fBodyAcc_std_Z			Dimensionless	Std deviation of FFT transformed body acceleration Z axis
-47 fBodyAcc_meanFreq_X			Hz		Mean of body acceleration frequency X axis
-48 fBodyAcc_meanFreq_Y			Hz		Mean of body acceleration frequency Y axis
-49 fBodyAcc_meanFreq_Z			Hz		Mean of body acceleration frequency Z axis
-50 fBodyAccJerk_mean_X			Dimensionless	Mean of FFT transformed rate of body acceleration X axis
-51 fBodyAccJerk_mean_Y			Dimensionless	Mean of FFT transformed rate of body acceleration Y axis
-52 fBodyAccJerk_mean_Z			Dimensionless	Mean of FFT transformed rate of body acceleration Z axis
-53 fBodyAccJerk_std_X			Dimensionless	Std deviation of FFT transformed rate of body acceleration X axis
-54 fBodyAccJerk_std_Y			Dimensionless	Std deviation of FFT transformed rate of body acceleration Y axis
-55 fBodyAccJerk_std_Z			Dimensionless	Std deviation of FFT transformed rate of body acceleration Z axis
-56 fBodyAccJerk_meanFreq_X		Hz		Mean of rate of body acceleration frequency X axis
-57 fBodyAccJerk_meanFreq_Y		Hz		Mean of rate of body acceleration frequency Y axis
-58 fBodyAccJerk_meanFreq_Z		Hz		Mean of rate of body acceleration frequency Z axis
-59 fBodyGyro_mean_X			Dimensionless	Mean of FFT transformed rate of body rotation X axis
-60 fBodyGyro_mean_Y			Dimensionless	Mean of FFT transformed rate of body rotation Y axis
-61 fBodyGyro_mean_Z			Dimensionless	Mean of FFT transformed rate of body rotation Z axis
-62 fBodyGyro_std_X			Dimensionless	Std deviation of FFT transformed rate of body rotation X axis
-63 fBodyGyro_std_Y			Dimensionless	Std deviation of FFT transformed rate of body rotation Y axis
-64 fBodyGyro_std_Z			Dimensionless	Std deviation of FFT transformed rate of body rotation Z axis
-65 fBodyGyro_meanFreq_X			Hz		Mean frequency of rate of body rotation X axis
-66 fBodyGyro_meanFreq_Y			Hz		Mean frequency of rate of body rotation Y axis
-67 fBodyGyro_meanFreq_Z			Hz		Mean frequency of rate of body rotation Z axis
-68 fBodyAccMag_mean			Dimensionless	Mean of FFT transformed absolute magnitudes of body acceleration XYZ axes
-69 fBodyAccMag_std			Dimensionless	Std deviation of FFT transformed absolute magnitudes of body acceleration XYZ axes
-70 fBodyAccMag_meanFreq			Hz		Mean frequency of absolute magnitudes of body acceleration XYZ axes
-71 fBodyBodyAccJerkMag_mean		Dimensionless	Mean of FFT transformed absolute magnitudes of rate of body acceleration XYZ axes are these typo's
-72 fBodyBodyAccJerkMag_std		Dimensionless	Std deviation of FFT transformed absolute magnitudes of rate of body acceleration XYZ axes are these
-73 fBodyBodyAccJerkMag_meanFreq 	Hz		Mean frequency of absolute magnitudes of rate of body acceleration XYZ axes is this a typo?	
-74 fBodyBodyGyroMag_mean		Dimensionless	Mean of FFT transformed absolute magnitudes rate of body rotation XZY axes
-75 fBodyBodyGyroMag_std			Dimensionless	Std deviation of FFT transformed absolute magnitudes rate of body rotation XZY axes
-76 fBodyBodyGyroMag_meanFreq		Hz		Mean frequency of absolute magnitudes rate of body rotation XZY axes
-77 fBodyBodyGyroJerkMag_mean		Dimensionless	Mean of FFT transformed absolute magnitudes of 1st derivative of rate of body rotation XYZ axes	
-78 fBodyBodyGyroJerkMag_std		Dimensionless	Std deviation of FFT transformed absolute magnitudes of 1st derivative of rate of bodyrotation XYZ axes
-79 fBodyBodyGyroJerkMag_meanFreq	Hz		Mean frequency of absolute magnitudes of 1st derivative of rate of body rotation XYZ axes
-
 
 ### Summary choices:
 
@@ -120,9 +122,7 @@ Excepting those cases where the original code book specifies that an f* measurem
 the f* measurements cannot be interpreted in the same units as the original t* measurements from which they are derived.  
 
 The use of the dataset is acknowdged to be courtesy of
-Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes_Ortiz. Human Activity Recognition on Smartphones using a Multiclass 
-
-Hardware_Friendly Support Vector Machine. International Workshop of Ambient Assisted Living IWAAL 2012. Vitoria_Gasteiz, Spain. Dec 2012
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes_Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware_Friendly Support Vector Machine. International Workshop of Ambient Assisted Living IWAAL 2012. Vitoria_Gasteiz, Spain. Dec 2012
 
 
 
