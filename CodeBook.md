@@ -17,13 +17,15 @@ variables is computed
 
 The 79 measurements are as follows: 
 
-   Name					Units		Description
+<table>
 
-1  tBodyAcc_mean_X			G		Mean of body acceleration X axis
-2  tBodyAcc_mean_Y			G		Mean of body acceleration Y axis
-3  tBodyAcc_mean_Z			G		Mean of body acceleration Z axis
-4  tBodyAcc_std_X			G		Std deviation of body acceleration X axis
-5  tBodyAcc_std_Y			G		Std deviation of body acceleration Y axis
+<tr><td></td>	<td>Name</td>				<td>Units</td>		<td>Description</td>
+<tr><td>1</td>  <td>tBodyAcc_mean_X</td>		<td>G</td>		<td>Mean of body acceleration X axis</td>
+<tr><td>2</td>  <td>tBodyAcc_mean_Y</td>		<td>G</td>		<td>Mean of body acceleration Y axis</td>
+<tr><td>3</td>  <td>tBodyAcc_mean_Z</td>		<td>G</td>		<td>Mean of body acceleration Z axis</td>
+<tr><td>4</td>  <td>tBodyAcc_std_X</td>			<td>G</td>		<td>Std deviation of body acceleration X axis</td>
+<tr><td>5</td>  <td>tBodyAcc_std_Y</td>			<td>G</td>		<td>Std deviation of body acceleration Y axis</td>
+</table>
 6  tBodyAcc_std_Z			G		Std deviation of body acceleration Z axis
 7  tGravityAcc_mean_X			G		Mean of gravity acceleration X axis
 8  tGravityAcc_mean_Y			G		Mean of gravity acceleration Y axis
