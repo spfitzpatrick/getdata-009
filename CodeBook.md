@@ -17,7 +17,7 @@ The 79 measurements are listed below:
 - f* are frequency domain provided by Fourier transform of the input t* signals
 
 - G is units of gravity
-- Hz is units of hertz (cycles/sec) 
+- Hz is units of hertz (cycles/sec)
 - See the explanation under Summary Choices regarding the dimensionless units
 
 <table>
