@@ -45,6 +45,6 @@ column names before being saved to disk.
 
 The row layouts of the tidy and result sets are almost identical, except in one regard.
 The result dataset contains an extra column 'Aggregation Method' which is designed to remind the
-end user of the method applied in summarizing the various discete measurements of the 'tidy' dataset.
+end user of the method applied in summarizing the various discrete measurements of the 'tidy' dataset.
 In the context of this assignment, this always contains the value 'mean'.
 
