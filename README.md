@@ -1,21 +1,30 @@
 ### Processing Steps :
 
 The raw input data was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
 The download zip file was placed in the same directory as the run_analysis.R script
+
 The R working directory is set to the location where the datafile and the R script are located
+
 The run_analysis.R script was run. No command line variables are required.
+
 The output of the run_analysis.R script consists of 2 files. These are written to the same
 directory as that in which the run_analysis.R script is located.
 
-result.txt			The resultant dataset generated as specified in step 5 of the assignment
-tidy_dataset.txt		The 'tidy' dataset as specified in steps 1-4 of the assignment
+result.txt
+The resultant dataset generated as specified in step 5 of the assignment
+
+tidy_dataset.txt
+The 'tidy' dataset as specified in steps 1-4 of the assignment
 
 
 
 ### Script workings :
 
-The script will search for and unzip the file 'Dataset.zip'. If the zip file is not present
-then the script will attempt to download it from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+The script will search for and unzip the file 'Dataset.zip'. 
+If the zip file is not present then the script will attempt to download it from
+
+ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 Once the zip file is available the script will unzip this (if this is not already done) to prepare for processing.
 
