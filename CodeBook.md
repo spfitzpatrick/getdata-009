@@ -116,6 +116,11 @@ was computed. The resultant dat set is available in the file 'result.txt'
 The interested user is referred to the features_info.txt file provided with the data set for a more complete description of
 the techniques used to derive the 561 features from the raw data assembled by the original project team.
 
+The names applied to the various measurements are derived from the original names specified in the input data set.
+However some transforms have been applied to these names which contain characters which may confuse some R data frame column methods.
+Specifically, parentheses has been removed from the original names, and hyphens have been replaced by underscore characters.
+With this knowledge the end-user can easily relate the column names of the tidied and the output data sets, to those of the input data set.
+
 Some of the resultant variables are specified as dimensionless. The application of a fourier transform to time domain measurements
 results in a frequency domain output. The original units of measure (G, radians etc) are no longer applicable to the transformed data.
 Excepting those cases where the original code book specifies that an f* measurement is a frequency measurement (identified by the _meanFreq suffix)
